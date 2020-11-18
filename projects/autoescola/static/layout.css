@@ -133,7 +133,7 @@ a {
     #address {
         flex-direction: column-reverse;
     }
-    #address div iframe {width:60%;height:60%;}
+    iframe {width:60%;height:60%;}
     #address-text {
         width: auto;
     }
