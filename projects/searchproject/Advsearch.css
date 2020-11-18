@@ -1,0 +1,43 @@
+header {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+a {
+    font-family: sans-serif;
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+p {
+    font-family: sans-serif;
+    color: black;
+    font-size: large;
+    margin-left: 2%;
+}
+label {
+    font-family: sans-serif, Arial;
+    color: black;
+    font-size: medium;
+    float: left;
+}
+.searchbox {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: absolute;
+    left: 200px;
+}
+#container{
+    position: relative;
+    width: 505px;
+    padding: 5px;
+    margin-left: 2%;
+}
+#advsrchbutton {
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
