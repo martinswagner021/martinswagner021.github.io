@@ -1,6 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin: 0px;
+    padding: 0px;
 }
 #body{
     margin: 20px;
@@ -103,6 +105,7 @@ a {
 #nav form {
     margin: 0px;
 }
+iframe {width: 400px;height:400px}
 
 @keyframes drop {
     0% {
@@ -139,4 +142,11 @@ a {
     .fotos-menu {
         height: 300px;
     }
+}
+@media screen and (max-width: 425px){
+    .fotos-menu{height: 35vh;}
+    iframe{width:220px;height:220px;}
+    .navlink {font-size: 12px;}
+    #matricula{width:80px;height:20px;font-size:12px}
+    ul{padding: 0px;}
 }
