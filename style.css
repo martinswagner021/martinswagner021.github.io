@@ -3,6 +3,8 @@ body{
     font-weight: 400;
     color:white;
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 .body{
     position: absolute;
@@ -16,9 +18,10 @@ body{
     animation: drop 1s ease;
 }
 .header {
-    margin-top: 5vh;
+    padding-top: 5vh;
     height: 10vh;
     width: 80%;
+    transform: translateX(-5%);
     margin:  auto;
 }
 .header ul {
@@ -36,9 +39,6 @@ a {
     color: inherit;
 }
 a:hover{color:rgb(173, 173, 173)}
-
-
-
 .dropdown {
     position: absolute;
     display: flex;
@@ -57,6 +57,17 @@ a:hover{color:rgb(173, 173, 173)}
 .dropdown-content a{padding: 10px;}
 .dropdown-content a:hover{background-color: rgb(173, 173, 173);color: black;}
 .dropdown:hover .dropdown-content{display:flex;animation: dropdown 0.5s ease;}
+
+.background{
+    position: fixed;
+    z-index: -1;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    min-width: 1024px;
+    opacity: 0.2;
+}
 
 @keyframes drop {
     0% {
