@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./api.js"></script>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Roboto', sans-serif;
+                background-color: #5500ff;
+                color: white;
+            }
+            .background{
+                position: fixed;
+                top: 0%;
+                z-index: -1;
+                opacity: 0.2;
+                width: 100%;
+                min-height: 100%;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .currency-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .currency-container select, .currency-container p{
+                margin: 10px;
+            }
+            #base, #convert-to{
+                padding: 2px;
+                font-weight: bold;
+            }
+            .submit-currency{
+                background-color: dodgerblue;
+                width: 160px;
+                height: 40px;
+                font-weight: bold;
+                font-size: larger;
+                color: white;
+                border: 1px solid white;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            a{text-decoration: none}
+            .about-me{
+                color: white;
+            }
+            .about-me:hover{
+                color:dodgerblue;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+            @media screen and (max-width: 400px) {
+                .currency-container{flex-direction: column;}
+            }
+        </style>
+    </head>
+    <body>
+        <img class="background" src="static/currency-background.jpg" alt="background">
+        <div class="container">
+            <h1 class="title">Currency Converter</h1>
+            <div class="currency-container">
+                <select name="base" id="base">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">American Dollar</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="AUD">Australian Dollar</option>
+                </select>
+                Convert to:
+                <select name="convert-to" id="convert-to">
+                    <option value="USD">American Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="AUD">Australian Dollar</option>
+                </select>
+                =
+                
+            </div>
+            <h2 class="currency">Click on Convert</h2>
+            <button class="submit-currency">Convert</button>
+        </div>
+    </body>
+    <footer>
+        <h4>Developed by: <a class="about-me" href="https://www.instagram.com/__wagner_martins__/">Wagner Martins</a></h4>
+    </footer>
+</html>
